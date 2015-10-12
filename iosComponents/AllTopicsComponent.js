@@ -2,6 +2,8 @@ const React = require('react-native');
 const TopicTab = require('./TopicTabComponent');
 const RefreshableListView = require('react-native-refreshable-listview');
 const Colors = require('../commonComponents/Colors');
+const CNodeService = require('../networkService/CNodeService');
+const TopicWatchMixin = require('../commonComponents/TopicWatchMixin');
 
 const {
   AppRegistry,
@@ -84,71 +86,34 @@ const styles = StyleSheet.create({
   }
 });
 
-let currentPage = 1;
-let MAX_PAGE = 3;
-let REQUEST_URL_TOPICS = 'https://cnodejs.org/api/v1/topics?limit=15';
-let topics = [];
-
 const AllTopicsComponent = React.createClass({
   getInitialState() {
-      return {
-        dataSource: new ListView.DataSource({
-          rowHasChanged: (row1, row2) => row1 !== row2,
-        }),
-        loaded: false,            
-      };
+    return {
+      dataSource: new RefreshableListView.DataSource({rowHasChanged: (row1, row2) => row1 !== row2}),
+      loaded: false,
+    };
+  },
+
+  getReload() {
+    return CNodeService.reloadTopics(responseData => {
+      this.setState({
+        dataSource: this.state.dataSource.cloneWithRows(responseData),
+        loaded: true
+      });
+    })
+  },
+
+  appendTopics() {
+    return CNodeService.appendTopics(responseData => {
+      this.setState({
+        dataSource: this.state.dataSource.cloneWithRows(responseData),
+        loaded: true
+      });
+    })
   },
 
   componentDidMount() {
-    this.fetchData();     
-  },
-
-  getRequestURL(append) {
-    let page = 1;
-    if (append) {
-      if (currentPage > MAX_PAGE) {
-        return;
-      }
-
-      currentPage += 1;
-      page = currentPage;
-    } else {
-      currentPage = 1;
-      topics = [];
-    }
-    const url = REQUEST_URL_TOPICS + '&page=' + page;
-
-    return url;
-  },
-
-  fetchData() {
-    fetch(this.getRequestURL(false))
-    .then((response) => response.json())
-    .then((responseData) => {
-      topics = responseData.data;
-      this.setState({
-        dataSource: this.state.dataSource.cloneWithRows(topics),
-        loaded: true,
-      });
-    })
-    .done();
-  },
-
-  appendData() {
-    if (currentPage > MAX_PAGE) {
-      return;
-    }
-    console.log('appendData now');
-    fetch(this.getRequestURL(true))
-      .then((response) => response.json())
-      .then((responseData) => {
-        topics.push.apply(topics, responseData.data);
-        this.setState({
-          dataSource: this.state.dataSource.cloneWithRows(topics),
-          loaded: true,
-        });
-      })
-      .done();
+    this.getReload()
   },
 
   render() {
@@ -161,8 +126,8 @@ const AllTopicsComponent = React.createClass({
         style={styles.listView}
         dataSource={this.state.dataSource}
         renderRow={this.renderTopic}
-        loadData={this.fetchData}
-        onEndReached={this.appendData}
+        loadData={this.getReload}
+        onEndReached={this.appendTopics}
         scrollRenderAheadDistance={50}
       />
     );
@@ -196,9 +161,6 @@ const AllTopicsComponent = React.createClass({
       </View>
     );
   },
-
 });
 
 module.exports = AllTopicsComponent;
-
-

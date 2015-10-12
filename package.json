@@ -6,7 +6,10 @@
     "start": "node_modules/react-native/packager/packager.sh"
   },
   "dependencies": {
+    "events": "^1.1.0",
     "react-native": "^0.11.4",
-    "react-native-refreshable-listview": "^1.3.0"
+    "react-native-refreshable-listview": "^1.3.0",
+    "underscore": "^1.8.3",
+    "url-join": "0.0.1"
   }
 }
