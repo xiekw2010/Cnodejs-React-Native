@@ -5,8 +5,6 @@ const {EventEmitter} = require('events');
 
 const TOPICS_API_PATH = config.apiHost + '/topics' + '?limit=' + config.loadPerPage;
 const MAX_PAGE = config.loadMaxPages;
-const EmitKeyReload = 'reload';
-const EmitKeyAppend = 'append';
 
 class CNodeService extends EventEmitter {
    url(append) {

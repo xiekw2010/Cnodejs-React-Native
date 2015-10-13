@@ -5,6 +5,14 @@ class Routes {
 			title: 'cnodejs',
 		};
 	}
+
+	static topic(topic) {
+		return {
+			component: require('./TopicDetailComponent'),
+			title: topic.title,
+			passProps: {topic: topic}
+		}
+	}
 }
 
 module.exports = Routes;
