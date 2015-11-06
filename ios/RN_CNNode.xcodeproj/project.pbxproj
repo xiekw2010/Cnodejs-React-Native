@@ -13,7 +13,6 @@
 		00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
-		00E356F31AD99517003FC87E /* RN_CNNodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RN_CNNodeTests.m */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
@@ -23,6 +22,22 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		BE29C35C1BD6194600EAC526 /* libRCTAutoComplete.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE29C35B1BD6191600EAC526 /* libRCTAutoComplete.a */; };
+		BE29C35F1BD6296100EAC526 /* PopoverManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE29C35E1BD6296100EAC526 /* PopoverManager.m */; };
+		BE29C3691BD642BB00EAC526 /* libRCTRefreshControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE29C3681BD63DEE00EAC526 /* libRCTRefreshControl.a */; };
+		BE29C36C1BD6637F00EAC526 /* DXRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BE29C36B1BD6637F00EAC526 /* DXRefreshControl.m */; };
+		BE5E816B1BCDF67C00BA8AB4 /* DXPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5E81691BCDF67C00BA8AB4 /* DXPopover.m */; };
+		BE67C3BA1BDDC0750009BC40 /* DXCategoryMenuManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE67C3B91BDDC0750009BC40 /* DXCategoryMenuManager.m */; };
+		BE6A49131BD7667B0012C18A /* UIView+TopBarMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6A49121BD7667B0012C18A /* UIView+TopBarMessage.m */; };
+		BE6A49221BD766A90012C18A /* DXTopMessageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6A49211BD766A90012C18A /* DXTopMessageManager.m */; };
+		BE7192FE1BD7890A0070A769 /* JHSCartoonPullToRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7192F41BD7890A0070A769 /* JHSCartoonPullToRefreshView.m */; };
+		BE7192FF1BD7890A0070A769 /* JHSMagicLampPullToRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7192F61BD7890A0070A769 /* JHSMagicLampPullToRefreshView.m */; };
+		BE7193011BD7890A0070A769 /* JHSPullToRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7192FA1BD7890A0070A769 /* JHSPullToRefreshControl.m */; };
+		BE7193111BD78B7D0070A769 /* UIView+SNEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7193101BD78B7D0070A769 /* UIView+SNEdge.m */; };
+		BE7193131BD78BD00070A769 /* JHSKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BE7193121BD78BD00070A769 /* JHSKit.bundle */; };
+		BE95BCAC1BD8E7F300B69DD1 /* NativePlayViewControllr.m in Sources */ = {isa = PBXBuildFile; fileRef = BE95BCAB1BD8E7F300B69DD1 /* NativePlayViewControllr.m */; };
+		BE95BCC21BD9F9C300B69DD1 /* DXTextCategoryMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = BE95BCC11BD9F9C300B69DD1 /* DXTextCategoryMenu.m */; };
+		CAB811B981DA26E2A433577E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A9B6DB06C486519294E4B9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +118,20 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
+		BE29C35A1BD6191600EAC526 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE29C3561BD6191600EAC526 /* RCTAutoComplete.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTAutoComplete;
+		};
+		BE29C3671BD63DEE00EAC526 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE29C3631BD63DEE00EAC526 /* RCTRefreshControl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTRefreshControl;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -122,7 +151,7 @@
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = RN_CNNode/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RN_CNNode/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RN_CNNode/Info.plist; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* RN_CNNode-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "RN_CNNode-info.plist"; path = "RN_CNNode/RN_CNNode-info.plist"; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RN_CNNode/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		2ADEEBADCEA9861DFBDA6F8E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +159,34 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		92A5EAAFA498B64D6AA8915D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B0A9B6DB06C486519294E4B9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE29C3561BD6191600EAC526 /* RCTAutoComplete.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAutoComplete.xcodeproj; path = "../node_modules/react-native-autocomplete/RCTAutoComplete.xcodeproj"; sourceTree = "<group>"; };
+		BE29C35D1BD6296100EAC526 /* PopoverManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverManager.h; sourceTree = "<group>"; };
+		BE29C35E1BD6296100EAC526 /* PopoverManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverManager.m; sourceTree = "<group>"; };
+		BE29C3631BD63DEE00EAC526 /* RCTRefreshControl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTRefreshControl.xcodeproj; path = "../node_modules/react-refresh-control/RCTRefreshControl.xcodeproj"; sourceTree = "<group>"; };
+		BE29C36A1BD6637F00EAC526 /* DXRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXRefreshControl.h; sourceTree = "<group>"; };
+		BE29C36B1BD6637F00EAC526 /* DXRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXRefreshControl.m; sourceTree = "<group>"; };
+		BE5E81681BCDF67C00BA8AB4 /* DXPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXPopover.h; sourceTree = "<group>"; };
+		BE5E81691BCDF67C00BA8AB4 /* DXPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXPopover.m; sourceTree = "<group>"; };
+		BE67C3B81BDDC0750009BC40 /* DXCategoryMenuManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DXCategoryMenuManager.h; path = ../DXCategoryMenuManager.h; sourceTree = "<group>"; };
+		BE67C3B91BDDC0750009BC40 /* DXCategoryMenuManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DXCategoryMenuManager.m; path = ../DXCategoryMenuManager.m; sourceTree = "<group>"; };
+		BE6A49111BD7667B0012C18A /* UIView+TopBarMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TopBarMessage.h"; sourceTree = "<group>"; };
+		BE6A49121BD7667B0012C18A /* UIView+TopBarMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TopBarMessage.m"; sourceTree = "<group>"; };
+		BE6A49201BD766A90012C18A /* DXTopMessageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXTopMessageManager.h; sourceTree = "<group>"; };
+		BE6A49211BD766A90012C18A /* DXTopMessageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXTopMessageManager.m; sourceTree = "<group>"; };
+		BE7192F31BD7890A0070A769 /* JHSCartoonPullToRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSCartoonPullToRefreshView.h; sourceTree = "<group>"; };
+		BE7192F41BD7890A0070A769 /* JHSCartoonPullToRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSCartoonPullToRefreshView.m; sourceTree = "<group>"; };
+		BE7192F51BD7890A0070A769 /* JHSMagicLampPullToRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSMagicLampPullToRefreshView.h; sourceTree = "<group>"; };
+		BE7192F61BD7890A0070A769 /* JHSMagicLampPullToRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSMagicLampPullToRefreshView.m; sourceTree = "<group>"; };
+		BE7192F91BD7890A0070A769 /* JHSPullToRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSPullToRefreshControl.h; sourceTree = "<group>"; };
+		BE7192FA1BD7890A0070A769 /* JHSPullToRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSPullToRefreshControl.m; sourceTree = "<group>"; };
+		BE7192FB1BD7890A0070A769 /* JHSPullToRefreshProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSPullToRefreshProtocols.h; sourceTree = "<group>"; };
+		BE71930F1BD78B7D0070A769 /* UIView+SNEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SNEdge.h"; sourceTree = "<group>"; };
+		BE7193101BD78B7D0070A769 /* UIView+SNEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SNEdge.m"; sourceTree = "<group>"; };
+		BE7193121BD78BD00070A769 /* JHSKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JHSKit.bundle; sourceTree = "<group>"; };
+		BE95BCAA1BD8E7F300B69DD1 /* NativePlayViewControllr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativePlayViewControllr.h; sourceTree = "<group>"; };
+		BE95BCAB1BD8E7F300B69DD1 /* NativePlayViewControllr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativePlayViewControllr.m; sourceTree = "<group>"; };
+		BE95BCC01BD9F9C300B69DD1 /* DXTextCategoryMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXTextCategoryMenu.h; sourceTree = "<group>"; };
+		BE95BCC11BD9F9C300B69DD1 /* DXTextCategoryMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXTextCategoryMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +201,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE29C3691BD642BB00EAC526 /* libRCTRefreshControl.a in Frameworks */,
+				BE29C35C1BD6194600EAC526 /* libRCTAutoComplete.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
@@ -154,6 +213,7 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+				CAB811B981DA26E2A433577E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,11 +296,14 @@
 		13B07FAE1A68108700A75B9A /* RN_CNNode */ = {
 			isa = PBXGroup;
 			children = (
+				BE5E81661BCDF67C00BA8AB4 /* Classes */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				BE95BCAA1BD8E7F300B69DD1 /* NativePlayViewControllr.h */,
+				BE95BCAB1BD8E7F300B69DD1 /* NativePlayViewControllr.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
-				13B07FB61A68108700A75B9A /* Info.plist */,
+				13B07FB61A68108700A75B9A /* RN_CNNode-info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
@@ -274,6 +337,8 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				BE29C3631BD63DEE00EAC526 /* RCTRefreshControl.xcodeproj */,
+				BE29C3561BD6191600EAC526 /* RCTAutoComplete.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
 				00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */,
@@ -328,6 +393,78 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BE29C3571BD6191600EAC526 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE29C35B1BD6191600EAC526 /* libRCTAutoComplete.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE29C3641BD63DEE00EAC526 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE29C3681BD63DEE00EAC526 /* libRCTRefreshControl.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE5E81661BCDF67C00BA8AB4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BE95BCAD1BD8E96500B69DD1 /* BridgeNativeClass */,
+				BE95BC901BD8D9C300B69DD1 /* CategoryMenu */,
+				BE7192F21BD7890A0070A769 /* PullToRefresh */,
+				BE5E81681BCDF67C00BA8AB4 /* DXPopover.h */,
+				BE5E81691BCDF67C00BA8AB4 /* DXPopover.m */,
+				BE29C35D1BD6296100EAC526 /* PopoverManager.h */,
+				BE29C35E1BD6296100EAC526 /* PopoverManager.m */,
+				BE6A49111BD7667B0012C18A /* UIView+TopBarMessage.h */,
+				BE6A49121BD7667B0012C18A /* UIView+TopBarMessage.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BE7192F21BD7890A0070A769 /* PullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				BE7193121BD78BD00070A769 /* JHSKit.bundle */,
+				BE71930F1BD78B7D0070A769 /* UIView+SNEdge.h */,
+				BE7193101BD78B7D0070A769 /* UIView+SNEdge.m */,
+				BE7192F31BD7890A0070A769 /* JHSCartoonPullToRefreshView.h */,
+				BE7192F41BD7890A0070A769 /* JHSCartoonPullToRefreshView.m */,
+				BE7192F51BD7890A0070A769 /* JHSMagicLampPullToRefreshView.h */,
+				BE7192F61BD7890A0070A769 /* JHSMagicLampPullToRefreshView.m */,
+				BE7192F91BD7890A0070A769 /* JHSPullToRefreshControl.h */,
+				BE7192FA1BD7890A0070A769 /* JHSPullToRefreshControl.m */,
+				BE7192FB1BD7890A0070A769 /* JHSPullToRefreshProtocols.h */,
+			);
+			path = PullToRefresh;
+			sourceTree = "<group>";
+		};
+		BE95BC901BD8D9C300B69DD1 /* CategoryMenu */ = {
+			isa = PBXGroup;
+			children = (
+				BE95BCC01BD9F9C300B69DD1 /* DXTextCategoryMenu.h */,
+				BE95BCC11BD9F9C300B69DD1 /* DXTextCategoryMenu.m */,
+				BE67C3B81BDDC0750009BC40 /* DXCategoryMenuManager.h */,
+				BE67C3B91BDDC0750009BC40 /* DXCategoryMenuManager.m */,
+			);
+			name = CategoryMenu;
+			path = NavigationCategory;
+			sourceTree = "<group>";
+		};
+		BE95BCAD1BD8E96500B69DD1 /* BridgeNativeClass */ = {
+			isa = PBXGroup;
+			children = (
+				BE29C36A1BD6637F00EAC526 /* DXRefreshControl.h */,
+				BE29C36B1BD6637F00EAC526 /* DXRefreshControl.m */,
+				BE6A49201BD766A90012C18A /* DXTopMessageManager.h */,
+				BE6A49211BD766A90012C18A /* DXTopMessageManager.m */,
+			);
+			name = BridgeNativeClass;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -353,9 +490,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RN_CNNode" */;
 			buildPhases = (
+				C39D3F5BE3E28069BA634A83 /* Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
+				88A55DEC445B502C04EA4031 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -398,6 +537,10 @@
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
 				},
 				{
+					ProductGroup = BE29C3571BD6191600EAC526 /* Products */;
+					ProjectRef = BE29C3561BD6191600EAC526 /* RCTAutoComplete.xcodeproj */;
+				},
+				{
 					ProductGroup = 00C302B61ABCB90400DB3ED1 /* Products */;
 					ProjectRef = 00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */;
 				},
@@ -412,6 +555,10 @@
 				{
 					ProductGroup = 00C302D41ABCB9D200DB3ED1 /* Products */;
 					ProjectRef = 00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */;
+				},
+				{
+					ProductGroup = BE29C3641BD63DEE00EAC526 /* Products */;
+					ProjectRef = BE29C3631BD63DEE00EAC526 /* RCTRefreshControl.xcodeproj */;
 				},
 				{
 					ProductGroup = 139105B71AF99BAD00B5F7CC /* Products */;
@@ -513,6 +660,20 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		BE29C35B1BD6191600EAC526 /* libRCTAutoComplete.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTAutoComplete.a;
+			remoteRef = BE29C35A1BD6191600EAC526 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BE29C3681BD63DEE00EAC526 /* libRCTRefreshControl.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTRefreshControl.a;
+			remoteRef = BE29C3671BD63DEE00EAC526 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -529,18 +690,51 @@
 			files = (
 				008F07F31AC5B25A0029DE68 /* main.jsbundle in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				BE7193131BD78BD00070A769 /* JHSKit.bundle in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		88A55DEC445B502C04EA4031 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C39D3F5BE3E28069BA634A83 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		00E356EA1AD99517003FC87E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* RN_CNNodeTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,7 +742,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE7192FF1BD7890A0070A769 /* JHSMagicLampPullToRefreshView.m in Sources */,
+				BE95BCAC1BD8E7F300B69DD1 /* NativePlayViewControllr.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				BE29C35F1BD6296100EAC526 /* PopoverManager.m in Sources */,
+				BE29C36C1BD6637F00EAC526 /* DXRefreshControl.m in Sources */,
+				BE5E816B1BCDF67C00BA8AB4 /* DXPopover.m in Sources */,
+				BE6A49131BD7667B0012C18A /* UIView+TopBarMessage.m in Sources */,
+				BE67C3BA1BDDC0750009BC40 /* DXCategoryMenuManager.m in Sources */,
+				BE7192FE1BD7890A0070A769 /* JHSCartoonPullToRefreshView.m in Sources */,
+				BE6A49221BD766A90012C18A /* DXTopMessageManager.m in Sources */,
+				BE7193111BD78B7D0070A769 /* UIView+SNEdge.m in Sources */,
+				BE7193011BD7890A0070A769 /* JHSPullToRefreshControl.m in Sources */,
+				BE95BCC21BD9F9C300B69DD1 /* DXTextCategoryMenu.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -618,15 +824,20 @@
 			baseConfigurationReference = 92A5EAAFA498B64D6AA8915D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Di He (2582UT2XQ3)";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 				);
-				INFOPLIST_FILE = RN_CNNode/Info.plist;
+				INFOPLIST_FILE = "RN_CNNode/RN_CNNode-info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.taobao.cnodejs;
 				PRODUCT_NAME = RN_CNNode;
+				PROVISIONING_PROFILE = "29ee8e9c-a929-4bc9-87fd-2062d7dbff98";
 			};
 			name = Debug;
 		};
@@ -635,15 +846,20 @@
 			baseConfigurationReference = 2ADEEBADCEA9861DFBDA6F8E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Di He (2582UT2XQ3)";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 				);
-				INFOPLIST_FILE = RN_CNNode/Info.plist;
+				INFOPLIST_FILE = "RN_CNNode/RN_CNNode-info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.taobao.cnodejs;
 				PRODUCT_NAME = RN_CNNode;
+				PROVISIONING_PROFILE = "29ee8e9c-a929-4bc9-87fd-2062d7dbff98";
 			};
 			name = Release;
 		};
@@ -689,6 +905,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -728,6 +946,8 @@
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

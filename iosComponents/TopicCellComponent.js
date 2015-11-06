@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
   username: {
     marginLeft: 10,
     height: 19,
-    fontSize: 15,
+    fontSize: 13,
     color: Colors.textGray
   },
 
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     marginTop: 5,
     height: 14,
-    fontSize: 13,
+    fontSize: 11,
     color: Colors.textGray
   },
 

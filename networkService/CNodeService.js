@@ -1,5 +1,4 @@
 const _ = require('underscore');
-const urlJoin = require('url-join');
 const config = require('../config');
 const {EventEmitter} = require('events');
 
@@ -10,18 +9,14 @@ class CNodeService extends EventEmitter {
    url(append) {
     let page = 1;
     if (append) {
-      if (this.topicsCurrentPage >= MAX_PAGE) {
-        return;
-      }
-
       this.topicsCurrentPage += 1;
       page = this.topicsCurrentPage;
     } else {
        this.topicsCurrentPage = 1;
        this.topics = [];
+       this.isReachEnd = false;
     }
-    const url = TOPICS_API_PATH + '&page=' + page;
-    console.log('url is '+ url);
+    const url = TOPICS_API_PATH + '&page=' + this.topicsCurrentPage;
     return url;
   }
 
@@ -30,28 +25,32 @@ class CNodeService extends EventEmitter {
       .then(response => response.json())
       .then(responseData => {
         this.topics = responseData.data;
-        handler(this.topics);
+        handler(null, this.topics);
       })
-      .done()
+      .catch(error => handler(error, null));
   }
 
   appendTopics(handler) {
-    if (this.topicsCurrentPage >= MAX_PAGE) {
+    if (this.topicsCurrentPage >= MAX_PAGE || this.topics.length == 0) {
+      this.isReachEnd = true;
       return;
     }
 
     return fetch(this.url(true))
       .then(response => response.json())
       .then(responseData => {
+        this.topics = this.topics;
         this.topics.push(...responseData.data);
-        handler(this.topics);
+        handler(null, this.topics);
       })
-      .done()
+      .catch(error => handler(error, null));
   }
 
-  cconstrutor() {
+  constructor() {
+    super();
     this.topics = [];
     this.topicsCurrentPage = 1;
+    this.isReachEnd = false;
   }
 }
 

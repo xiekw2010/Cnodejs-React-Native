@@ -1,0 +1,58 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0FB01E741FABCBFEA20AFCEB795E49672110A676",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8660FA6A2A8FC89A89E3982B6BEBD64CF52B2E39" : 0,
+    "0FB01E741FABCBFEA20AFCEB795E49672110A676" : 0,
+    "A5C630BEAF976AD6D3403D984F28248B2E0DCDA5" : 0,
+    "65ECC90CCB67D6C9650BCD7A49D61001919A9D6B" : 0,
+    "9B17265964C6F0A263DC312AFB01C7DA39C938B2" : 0,
+    "CD8DED7FBC7A2CC433DEBDF09BA04BB45A469A96" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2937C0EC-EB10-4E9B-89AB-3487796019A0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8660FA6A2A8FC89A89E3982B6BEBD64CF52B2E39" : "..\/Github\/DXRefresh",
+    "0FB01E741FABCBFEA20AFCEB795E49672110A676" : "CNodejs-React-Native\/",
+    "A5C630BEAF976AD6D3403D984F28248B2E0DCDA5" : "..\/Github\/DXPopover",
+    "65ECC90CCB67D6C9650BCD7A49D61001919A9D6B" : "..\/Github\/DXPhotoBrowser-DXSimplePhoto",
+    "9B17265964C6F0A263DC312AFB01C7DA39C938B2" : "..\/Github\/DXPhotoBrowser",
+    "CD8DED7FBC7A2CC433DEBDF09BA04BB45A469A96" : "..\/Github\/Placeholder"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RN_CNNode",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ios\/RN_CNNode.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "gitlab.alibaba-inc.com:kaiwei.xkw\/CNodejs-React-Native.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0FB01E741FABCBFEA20AFCEB795E49672110A676"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:xiekw2010\/DXPhotoBrowser-DXSimplePhoto.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "65ECC90CCB67D6C9650BCD7A49D61001919A9D6B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/xiekw2010\/DXRefresh.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8660FA6A2A8FC89A89E3982B6BEBD64CF52B2E39"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:xiekw2010\/DXPhotoBrowser.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9B17265964C6F0A263DC312AFB01C7DA39C938B2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/xiekw2010\/DXPopover.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A5C630BEAF976AD6D3403D984F28248B2E0DCDA5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/xiekw2010\/Placeholder.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CD8DED7FBC7A2CC433DEBDF09BA04BB45A469A96"
+    }
+  ]
+}
